@@ -3,78 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>О медведях.</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f0f8ff;
-        }
-
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #888;
-            border-radius: 8px;
-        }
-
-        h1 {
-            color: #2e8b57;
-            text-align: center;
-        }
-
-        h2 {
-            color: #8b0000;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
-        }
-
-        p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-
-        a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <h1>Медведи!</h1>
 
-    <p>Медведи — это млекопитающие из группы псообразных. Они могут вырастать от 1,2 до 3 метров, а вес их варьируется от 40 кг до 1 тонны.</p>
+    <div class="section">
+        <p>Медведи — это млекопитающие из группы псообразных. Они могут вырастать от 1,2 до 3 метров, а вес их варьируется от 40 кг до 1 тонны.</p>
+        <p>Некоторые разновидности медведей являются хищниками, другие же питаются растениями, ягодами и другими лакомствами. Средняя продолжительность жизни животного составляет 45 лет.</p>
+        <p>Медведи способны быстро бегать, хорошо плавать, прекрасно лазать по деревьям и даже проходить небольшие дистанции на задних лапах.</p>
+    </div>
 
-    <p>Некоторые разновидности медведей являются хищниками, другие же питаются растениями, ягодами и другими лакомствами. Средняя продолжительность жизни животного составляет 45 лет.</p>
+    <!-- position: static -->
+    <div class="flex-container">
+        <img src="Веб технологии/orig.jpg" alt="Медвежатки" class="static-image">
+        <p>Медвежата — это очаровательные малыши, которые быстро растут и учатся жить в дикой природе. Они играют, купаются и изучают мир вокруг себя.</p>
+    </div>
 
-    <p>Медведи способны быстро бегать, хорошо плавать, прекрасно лазать по деревьям и даже проходить небольшие дистанции на задних лапах.</p>
+    <!-- position: relative -->
+    <div class="flex-container">
+        <img src="Веб технологии/relative.jpg" alt="Медведь на дереве" class="image">
+        <p>Медведи — отличные альпинисты! Они могут лазать по деревьям, чтобы добраться до вкусных ягод или убежать от опасности.</p>
+    </div>
 
-    <img src="Веб технологии/orig.jpg" alt="Медвежатки">
+    <!-- Увлечения медведей -->
+    <div class="section">
+        <h2>Увлечения медведей:</h2>
+        <ul>
+            <li>Спать</li>
+            <li>Есть</li>
+            <li>Охотиться</li>
+        </ul>
+    </div>
 
-    <h2>Увлечения медведей:</h2>
-    <ul>
-        <li>Спать</li>
-        <li>Есть</li>
-        <li>Охотиться</li>
-    </ul>
+    <!-- position: absolute -->
+    <div class="flex-container">
+        <img src="Веб технологии/absolute.jpg" alt="Медведь в воде" class="absolute-image">
+    </div>
 
-    <h2>Полезные ссылки</h2>
-    <p>Вот несколько ссылок, которые могут быть интересны:</p>
-    <ul>
-        <li><a href="https://naturae.ru/zhivotnyi-mir/mlekopitayushhie/medvedi.html" target="_blank">Про медвежат</a></li>
-        <li><a href="https://kipmu.ru/medved/" target="_blank">Еще про медведей:)</a></li>
-    </ul>
+    <div class="section">
+        <h2>Полезные ссылки</h2>
+        <p>Вот несколько ссылок, которые могут быть интересны:</p>
+        <ul>
+            <li><a href="https://naturae.ru/zhivotnyi-mir/mlekopitayushhie/medvedi.html" target="_blank">Про медвежат</a></li>
+            <li><a href="https://kipmu.ru/medved/" target="_blank">Еще про медведей:)</a></li>
+        </ul>
+    </div>
+
+    <!-- position: fixed -->
+    <img src="Веб технологии/fixed.jpg" alt="Маленький медвежонок" class="fixed-image">
 
 </body>
 </html>

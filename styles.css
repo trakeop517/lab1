@@ -1,0 +1,156 @@
+/* 1. Добавляем box-sizing: border-box для всех элементов */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f8ff;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    position: relative; /* Для корректного позиционирования дочерних элементов */
+}
+
+img {
+    max-width: 100%; /* 2. Задаем максимальную ширину */
+    height: auto; /* 2. Автоматическая высота */
+    border: 2px solid #888;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 15px rgba(46, 139, 87, 0.7);
+    width: 100%; /* 2. Ширина 100% */
+    max-height: 500px; /* 2. Максимальная высота */
+}
+
+.centered {
+    text-align: center;
+}
+
+.section {
+    width: 80%; /* 2. Ширина секции */
+    max-width: 1200px; /* 2. Максимальная ширина секции */
+    min-height: 200px; /* 2. Минимальная высота секции */
+    margin: 0 auto; /* 2. Центрирование секции */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    color: #8b0000;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.highlight {
+    background-color: #ffeb3b;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative; /* 3. Позиционирование относительно обычного положения */
+    z-index: 1; /* 4. Устанавливаем слой выше других элементов */
+}
+
+h1 {
+    color: #2e8b57;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Caveat", cursive;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #8b0000;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Новые стили для позиционирования */
+
+/* 1. position: static (по умолчанию) */
+.static-image {
+    position: static; /* Это значение по умолчанию, можно не указывать */
+    margin-bottom: 20px;
+}
+
+/* 2. position: relative */
+.relative-image {
+    position: relative;
+    top: 20px; /* Смещение вниз */
+    left: 50px; /* Смещение вправо */
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+/* 3. position: absolute */
+.absolute-image {
+    position: absolute;
+    top: 100px; /* Отступ от верхней границы родителя */
+    right: 20px; /* Отступ от правой границы родителя */
+    width: 200px; /* Фиксированная ширина */
+    height: auto;
+}
+
+/* 4. position: fixed */
+.fixed-image {
+    position: fixed;
+    bottom: 20px; /* Фиксированное положение внизу */
+    right: 20px; /* Фиксированное положение справа */
+    width: 150px; /* Фиксированная ширина */
+    height: auto;
+}
+
+/* Дополнительные стили для красоты */
+.section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.section ul {
+    margin-top: 10px;
+}
+
+.section a {
+    font-weight: bold;
+}
+
+/* Стили для Flexbox */
+.flex-container {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    gap: 20px; /* Отступ между элементами */
+    margin-bottom: 30px;
+}
+
+.flex-container img {
+    flex: 1; /* Изображение занимает 1 часть пространства */
+    max-width: 40%; /* Максимальная ширина изображения */
+}
+
+.flex-container p {
+    flex: 2; /* Текст занимает 2 части пространства */
+}

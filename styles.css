@@ -12,6 +12,84 @@ body {
     padding: 20px;
 }
 
+
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    color: #8b0000;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #2e8b57;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #2e8b57;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #207a48;
+}
+
+button svg {
+    fill: currentColor;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e8b57;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .logo {
     position: absolute;
     top: 20px;
@@ -90,7 +168,7 @@ a:hover {
 }
 
 .absolute-image {
-    object-position: bottom; /* Изображение прижимается к низу */
+    object-position: bottom;
 }
 
 .fixed-image {
@@ -115,4 +193,12 @@ figcaption {
     font-size: 0.9rem;
     color: #777;
     margin-top: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

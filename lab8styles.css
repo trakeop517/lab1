@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+:root {
+    --primary-color: #ff6f61;
+    --secondary-color: #6c757d;
+}
+
+a:link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--secondary-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #ff0000;
+}
+
+a:focus, input:focus, textarea:focus, button:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+ul li:first-child {
+    color: var(--primary-color);
+}
+
+ul li:last-child {
+    color: #28a745;
+}
+
+
+ul li:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+ul li:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: var(--secondary-color);
+}
+
+
+input:disabled {
+    background-color: #e9ecef;
+    color: var(--secondary-color);
+}
+
+
+input:enabled {
+    background-color: #fff;
+}
+
+input:required {
+    border: 2px solid #dc3545;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+h2::first-letter {
+    font-size: 2em;
+    color: var(--primary-color);
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+
+ul li::marker {
+    color: var(--primary-color);
+}
+
+
+h1::before {
+    content: "🏠 ";
+}
+
+h1::after {
+    content: " 🏠";
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4f41;
+}
+
+button:active {
+    background-color: #e63c2e;
+}

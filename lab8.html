@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин бытовой техники</title>
+    <link rel="stylesheet" href="lab8styles.css">
+</head>
+<body>
+    <h1>Магазин бытовой техники</h1>
+
+    <section>
+        <h2>Каталог товаров</h2>
+        <a href="#kitchen">Техника для кухни</a>
+        <a href="#cleaning">Техника для уборки</a>
+        <a href="#entertainment">Техника для развлечений</a>
+    </section>
+
+    <section>
+        <h2>Оставить заявку</h2>
+        <form>
+            <label for="name">Имя (обязательное поле):</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+            <label for="email">Email (обязательное поле):</label>
+            <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" placeholder="Введите ваше сообщение"></textarea>
+
+            <label>
+                <input type="radio" name="option" value="kitchen"> Техника для кухни
+            </label>
+            <label>
+                <input type="radio" name="option" value="cleaning"> Техника для уборки
+            </label>
+            <label>
+                <input type="radio" name="option" value="entertainment"> Техника для развлечений
+            </label>
+
+            <label>
+                <input type="checkbox" name="agree"> Я согласен с условиями
+            </label>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Наша продукция</h2>
+        <ul>
+            <li>Холодильники</li>
+            <li>Стиральные машины</li>
+            <li>Пылесосы</li>
+            <li>Микроволновые печи</li>
+            <li>Телевизоры</li>
+            <li>Музыкальные центры</li>
+        </ul>
+    </section>
+</body>
+</html>
